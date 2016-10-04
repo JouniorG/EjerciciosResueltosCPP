@@ -4,8 +4,7 @@
 
 using namespace std;
 
-string MonthsName[12] = {"enero","febrero","marzo","abril","mayo",
-"junio","julio","agosto","septiembre","octubre","novimebre","diciembre"};
+string MonthsName[12] = {"enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","novimebre","diciembre"};
 
 int GetNumbersDayOfMonth(int month, int year);
 bool IsBisiesto(int year);
@@ -108,7 +107,8 @@ void SubtractOrSumDay(const Date &date, Date &result){
 	cout << "Elija una opción: " << endl;
 	cout << "1) Sumar dias."<<endl;
 	cout << "2) Restar dias."<<endl;
-	cout << "Option : ";cin >> option;
+	cout << "Option : ";
+	cin >> option;
 	switch(option){
 		case 1:
 			cout << "Ingrese cantidad de Dias: ";
