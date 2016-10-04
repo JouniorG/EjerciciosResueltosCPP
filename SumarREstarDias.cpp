@@ -86,7 +86,6 @@ Date& operator -(const Date &date, int &DayToSubtract){
 		day = day - DayToSubtract;
 		DayToSubtract = 0;
 		if(day < 0){
-
 			month--;
 			if(month < 0){
 				month = 11;
@@ -96,11 +95,9 @@ Date& operator -(const Date &date, int &DayToSubtract){
 			DayToSubtract = abs(day);
 			day = GetNumbersDayOfMonth(month - 1, year);
 		}
-		
 	}
 
 	return *( new Date(day, month, year) );
-
 }
 
 void SubtractOrSumDay(const Date &date, Date &result){
@@ -166,12 +163,13 @@ int main(int argc, char const *argv[])
 {
 
 	int Opt;
-	Date r;
+	Date ResultDate;
 
 	cout << "Elija una opción: " << endl;
 	cout << "1) Ingresar fecha."<<endl;
 	cout << "2) Fecha actual."<<endl;
-	cout << "Option : ";cin >> Opt;
+	cout << "Option : ";
+	cin >> Opt;
 
 	if(Opt == 1){
 		int day;
@@ -181,13 +179,13 @@ int main(int argc, char const *argv[])
 		cout << "Mes: "; cin >> month;
 		cout << "Annio: "; cin >> year;
 		Date dat(day, month, year);
-		SubtractOrSumDay(dat, r);
+		SubtractOrSumDay(dat, ResultDate);
 		dat.showDate();	
 		r.showDate();	
 	}
 	else{
 		Date dat;
-		SubtractOrSumDay(dat, r);
+		SubtractOrSumDay(dat, ResultDate);
 		dat.showDate();	
 		r.showDate();		
 	}
