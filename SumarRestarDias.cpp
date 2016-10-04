@@ -60,7 +60,6 @@ Date& operator +(const Date &date, int &DayToSum){
 			if( month > 11 ){
 				month = 0;
 				year++;
-				cout <<"Esto no se ejecuta";
 			}
 		}
 		else{
