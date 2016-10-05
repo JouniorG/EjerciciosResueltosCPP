@@ -180,13 +180,13 @@ int main(int argc, char const *argv[])
 		Date dat(day, month, year);
 		SubtractOrSumDay(dat, ResultDate);
 		dat.showDate();	
-		r.showDate();	
+		ResultDate.showDate();	
 	}
 	else{
 		Date dat;
 		SubtractOrSumDay(dat, ResultDate);
 		dat.showDate();	
-		r.showDate();		
+		ResultDate.showDate();		
 	}
 		
 	return 0;
