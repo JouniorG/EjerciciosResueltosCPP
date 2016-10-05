@@ -142,7 +142,7 @@ int GetNumbersDayOfMonth(int month, int year){
 			return 30;
 		break;
 		case 1:
-			return IsBisiesto(year)?29:28;
+			return IsLeapYearint(year)?29:28;
 		break;
 		default:
 		break;
