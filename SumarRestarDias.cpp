@@ -10,16 +10,16 @@ int GetNumbersDayOfMonth(int month, int year);
 bool IsBisiesto(int year);
 
 class Date{
-public:
-	int day;
-	int month;
-	int year;
-public:
-	/*CONTRUCTORRES*/ 
-	Date(int _day, int _month, int _year);
-	Date();
+	public:
+		int day;
+		int month;
+		int year;
+	public:
+		/*CONTRUCTORRES*/ 
+		Date(int _day, int _month, int _year);
+		Date();
 
-	void showDate();
+		void showDate();
 };
 
  /* CONSTRUCTORES DE LA CLASE DATE */
